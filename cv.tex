@@ -1,0 +1,96 @@
+\documentclass[10pt,a4paper,ragged2e]{cv}
+
+% Page layout
+\geometry{left=2cm,right=10cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+\usepackage{hyperref}
+
+% Font
+\ifxetexorluatex
+  \setmainfont{Carlito}
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+
+% Colours
+\definecolor{Blue}{HTML}{3e70bb}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{2E2E2E}
+% \colorlet{heading}{Blue}
+\colorlet{accent}{Blue}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Itimize & Ratings
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\begin{document}
+\name{Kris Foster}
+\tagline{Software Engineer}
+
+\personalinfo{
+  \email{krisfoster@live.ie}
+  \phone{+353 877836033}
+  \location{Dublin, Ireland}
+  \linkedin{\href{https://www.linkedin.com/in/kriscfoster/}{linkedin.com/in/kriscfoster}}
+  \github{\href{https://github.com/kriscfoster/}{github.com/kriscfoster}}
+%  \homepage{krisfoster.com}
+}
+
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+\cvsection[right-sidebar]{Experience}
+\cvevent{Senior Software Engineer}{Salesforce}{August 2020 -- Present}{Dublin, Ireland}
+\begin{itemize}
+\item Software Engineer SMTS (Senior Member of Technical Staff) with the Production Engineering Tools Team.
+\item Using Spring, Kotlin \& Node.js to build web applications in the cloud with Spinnaker, Terraform, Kubernetes \& AWS.
+\end{itemize}
+
+\divider
+
+\cvevent{Software Engineer}{Salesforce}{May 2019 -- July 2020}{Dublin, Ireland}
+\begin{itemize}
+\item Software Engineer MTS (Member of Technical Staff) with the Production Engineering Tools Team.
+\item Building web applications using Java, Kotlin, Spring, Node.js \& React.js. Working in the cloud with AWS \& Kubernetes.
+\end{itemize}
+
+\divider
+
+\cvevent{Intern \& Associate Software Engineer}{Salesforce}{June 2017 -- April 2019}{Dublin, Ireland}
+\begin{itemize}
+\item Joined the Production Engineering Tools team as an intern.
+\item Continued to work part-time until studies were finished, then joined as a Software Engineer AMTS (Associate Member of Technical Staff).
+\item Worked on the Refocus Rooms project (Incident Management Console used by Site Reliability).
+\item Full stack JavaScript with Node.js \& React.js.
+\end{itemize}
+
+\cvsection{Education}
+\cvevent{University College Dublin (UCD)}{M.Sc Advanced Software Engineering}{ 2020 -- 2022}{Dublin, Ireland}
+Part-time Masters in Advanced Software Engineering.
+
+\divider
+
+\cvevent{University College Dublin (UCD)}{B.Sc Computer Science}{ 2014 -- 2018}{Dublin, Ireland}
+\item Graduated with a 2.1 degree.
+
+\cvsection{Certifications}
+\begin{itemize}
+\item AWS Certified Solutions Architect - Associate (2019).
+\item CKAD: Certified Kubernetes Application Developer (2020).
+\item HashiCorp Certified Terraform Associate (2020).
+\end{itemize}
+
+\clearpage
+
+% \cvsection[page2sidebar]{Publications}
+
+\nocite{*}
+
+\end{document}
